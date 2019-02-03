@@ -1,12 +1,14 @@
 #pragma TextEncoding = "Windows-1252"
 #pragma rtGlobals=3		// Use modern global access method and strict wave access.
 
-Function tiffSaver(first, numScans, toPath)
+Function tiffSaver(first, numScans)
 	Variable first, numScans
-	String toPath
 	
 	Variable i
-	String pad
+	String pad, toPath
+	
+	PathInfo home
+	toPath = S_path
 	
 	for(i=first; i < first+numScans; i++)
 		if (i < 10)
