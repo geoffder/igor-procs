@@ -2,7 +2,7 @@
  
  // Based on PrintImageROI (http://www.igorexchange.com/node/1217) written by harneit
  
-Function GetLineCoordinates(lineNumber)
+//Function GetLineCoordinates(lineNumber)
 	Variable lineNumber
 	
 // 1. get the marquee in point units (axis units directly accessible only for 1D graphs!)
